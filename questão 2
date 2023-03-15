@@ -1,0 +1,54 @@
+// Banknotes
+//2° Questão
+function mod( $number, $base ) {
+        return $number % $base;
+}
+
+function div( $number, $base ) {
+        return floor( $number / $base );
+}
+
+$valor = 576;
+echo "".$valor."\n";
+
+if($valor >= 100){
+  $notasDe100 = div($valor,100);
+  $valor = mod($valor,100);
+   echo  $notasDe100." Nota(s) de R$ 100,00"."\n";
+}
+
+if($valor >= 50){
+  $notasDe50 = div($valor,50);
+  $valor = mod($valor,50);
+  echo $notasDe50." Nota(s) de R$ 50,00 "."\n";
+}
+
+if($valor >= 20){
+  $notasDe20 = div($valor,20);
+  $valor = mod($valor,20);
+  echo $notasDe20." Nota(s) de R$ 20,00 "."\n";
+}
+
+if($valor >= 10){
+  $notasDe10 = div($valor,10);
+  $valor = mod($valor,10);
+  echo $notasDe10." Nota(s) de R$ 10,00 "."\n";
+}
+
+if($valor >= 5){
+  $notasDe5 = div($valor,5);
+  $valor = mod($valor,5);
+  echo $notasDe5." Nota(s) de R$ 5,00"."\n";
+}
+
+if($valor >= 2){
+  $notasDe2 = div($valor,2);
+  $valor = mod($valor,2);
+  echo $notasDe2. " Nota(s) de R$ 2,00"."\n";
+}
+
+if($valor >= 1){
+  $notasDe1 = div($valor,1);
+  $valor = mod($valor,1);
+  echo $notasDe1. " Nota(s) de R$ 1,00"."\n";
+}
