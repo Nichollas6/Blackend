@@ -1,0 +1,32 @@
+//Even and Odd
+//11° Questão
+long N = sc.nextLong();
+
+    if (N >=1 && N <= 3000) {
+
+    for (int j=1; j<=N; j++) {
+
+    long F1 = sc.nextLong();
+    long F2 = sc.nextLong();
+
+    if (F1 >= 1 && F1 <= 1000 && F2 >= 1 && F2 <= 1000) {
+
+    long maior = 1;
+
+    for (int i=1; i<=1000; i++) {
+        if (F1%i == 0 && F2%i == 0) {
+            if (i > maior) {
+                maior = i;
+            }
+        }
+    }
+    System.out.println(maior);
+    }
+
+}
+}
+
+    sc.close();
+
+  }
+}
