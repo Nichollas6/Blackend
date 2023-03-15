@@ -1,0 +1,24 @@
+// Corrida de lesmas
+// 5° questão 
+
+while ($lesma = (fgets(STDIN))) {
+$quant = (int) $lesma;
+$vel = (fgets(STDIN));
+$arr = explode (" ", $vel);
+$arr = array_map ('intval', $arr);
+asort($arr);
+$final = implode (" ", $arr);
+$ultimo_n = end ($arr);
+
+if ($ultimo_n < 10) {
+    echo "1"."\n"; 
+}
+
+if ($ultimo_n >= 10 && $ultimo_n < 20) {
+    echo "2"."\n";
+}
+
+if ($ultimo_n >= 20) {
+    echo "3"."\n";
+}
+}
