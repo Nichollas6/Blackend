@@ -1,0 +1,25 @@
+// Resto da divisão
+// 3° questão 
+
+$X = intval(fgets(STDIN));
+$Y = intval(fgets(STDIN));
+
+if ($X < $Y) {
+    for ($i = $X + 1; $i < $Y; $i++) {
+        if ($i % 5 == 2 || $i % 5 == 3) {
+            $val = $i;
+
+        echo "$val"."\n";
+        }
+    }
+    }
+    
+if ($X > $Y) {
+    for ($i = $Y + 1; $i < $X; $i++) {
+        if ($i % 5 == 2 || $i % 5 == 3) {
+            $val = $i;
+
+        echo "$val"."\n";
+        }
+}
+}
